@@ -90,6 +90,8 @@ console.log(error, "errormessage")
           localStorage.setItem("id", res.data.id);
           localStorage.setItem("email", res.data.email);
           localStorage.setItem("token", res.data.token);
+          localStorage.setItem("name", res.data.name);
+
   
           console.log(res, "responseof the details")
           navigate("/home")
@@ -148,7 +150,7 @@ console.log(response)
                               <span className="logoin" style={{ color: "#ff5b22" }}>IN</span>
                             </h3>
                           </div>
-                          <div className="input-group mb-2" style={{ display: "flex", justifyContent: "center", alignItems: "center", paddingRight:"40px" }}>
+                          <div className=" mb-3" style={{ display: "flex" }}>
                             <div className="input-group-prepend">
                               <span
                                 className="input-group-text"
@@ -163,6 +165,7 @@ console.log(response)
                               type="text"
                               className="form-control changePlaceHolderSize"
                               wrapperClassName="mb-4"
+                              style={{width:"260px"}}
                               required
                               value={details.email}
                               onChange={(e) =>

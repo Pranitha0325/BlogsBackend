@@ -1,0 +1,17 @@
+.sidebar{
+    background-color:#5B8DEA ;
+    width:20vw;
+    height:100vh;
+    color:white;
+    padding-top:45px;
+    padding-left:2%;
+    display:flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start; 
+}
+.sidebar h2:hover {
+    color: #FB0501; /* Change the background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    
+}
